@@ -1,0 +1,76 @@
+/* Member variables */
+public final VoxelShape SHAPE;
+
+/* Place in Constructor */
+SHAPE = this.generateShape();
+
+/* Methods */
+private VoxelShape generateShape()
+{
+    List<VoxelShape> shapes = new ArrayList<>();
+    shapes.add(Block.makeCuboidShape(0.463, 0.1, 0.463, 0.537, 0.412, 0.537)); // HANDLE
+    shapes.add(Block.makeCuboidShape(0.45, 0, 0.45, 0.55, 0.1, 0.55)); // HANDLE_END
+    shapes.add(Block.makeCuboidShape(0.312, 0.412, 0.456, 0.688, 0.475, 0.544)); // HANDLE_GUARD
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+    // Skipped 'handle', as it has rotation
+
+    VoxelShape result = ShapeUtils.empty();
+    for(VoxelShape shape : shapes)
+    {
+        result = ShapeUtils.combine(result, shape, IBooleanFunction.OR);
+    }
+    return result.simplify();
+}
+
+@Override
+public VoxelShape getShape(IBlockState state, IBlockReader reader, BlockPos pos)
+{
+    return SHAPE;
+}
+
+@Override
+public VoxelShape getCollisionShape(IBlockState state, IBlockReader reader, BlockPos pos)
+{
+    return SHAPE;
+}

@@ -1,0 +1,1 @@
+recipe give @a swords:flaming_sword_recipe
