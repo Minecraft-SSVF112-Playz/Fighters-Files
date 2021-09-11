@@ -200,5 +200,8 @@
 			"color": 0,
 			"children": [8, 9]
 		}
+	],
+	"overrides": [
+		{"predicate": {"custom_model_data": 90901, "model": "item/obsidian_sword"}}
 	]
 }
