@@ -1,7 +1,6 @@
 {
 	"values": [
 	"fighters:loop",
-	"fighters:setup-all",
     "fighters:particals"
 	]
 }

@@ -1,2 +1,1 @@
-#Not yet ready to be coded due to swords
-#not being thier own individual item yet.
+execute at @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",tag:{display:{Name:'{"text":"Obsidian Sword"}'}}}}] run particle minecraft:landing_obsidian_tear

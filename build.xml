@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Sep 11, 2021 4:08:19 PM                                                        
+
+     Mincraft-Fighters    
+     description
+                   
+     shloa                                                                
+     ====================================================================== -->
+<project name="Mincraft-Fighters" default="default">
+    <description>
+            description
+    </description>
+	<property name="res.pack.src.dir" value="${basedir}/Fighters_Files"/>
+	<property name="res.pack.dest.dir" value="${user.home}/AppData/Roaming/.minecraft/resourcepacks"/>
+
+
+	<target name="hello.world">
+		<echo>Hello ${user.home}</echo>
+	</target>
+	<target name="deploy.fighter" description="Deploys fighter resourcepack to minecraft working folder">
+		<copydir src="${res.pack.src.dir}/Fighters_Reasourcepack"
+			forceoverwrite="true"
+			dest="${res.pack.dest.dir}/Fighters_Reasourcepack"></copydir>
+	</target>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" depends="depends" description="description">
+        
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="depends">
+    </target>
+
+</project>
