@@ -3,11 +3,11 @@
         "Unlocked": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting_template:item1"
+                "recipe": "fighters:obsidian_sword"
             }
         }
     },
     "rewards": {
-        "function": "crafting_template:crafted_item1"
+        "function": "fighters:crafted_obsidian_sword"
     }
 }
