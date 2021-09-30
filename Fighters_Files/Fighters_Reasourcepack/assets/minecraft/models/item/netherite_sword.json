@@ -202,6 +202,6 @@
 		}
 	],
 	"overrides": [
-		{"predicate": {"custom_model_data": 90901, "model": "item/obsidian_sword"}}
+		{"predicate": {"custom_model_data": 90901, "model": "item/fighters/obsidian_sword"}}
 	]
 }
